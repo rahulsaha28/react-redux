@@ -10,7 +10,7 @@ export const MovieReducer = (state=initialState, action)=>{
 
     switch(action.type){
         case GET_MOVIE_DETAIL:
-            const newMovie = state.movies.find(movie=>movie.imdbID==action.payload);
+            const newMovie = state.movies.find(movie=>movie.imdbID===action.payload);
             return {...state, movieDetail:newMovie};
         case SET_MOVIES:
             return {...state, movies:action.payload};

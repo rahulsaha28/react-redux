@@ -13,8 +13,8 @@ const MovieDetail = () => {
     
     
     useEffect(()=>{
-        dispatch(getMovieDetail(id))
-    }, [id])
+        dispatch(getMovieDetail(id));
+    }, [dispatch, id])
     return (
         <div className="container">
             <div className="row mt-3">

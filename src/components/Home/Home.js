@@ -13,7 +13,7 @@ const Home = () => {
         .then(res=>res.json())
         .then(data=>dispatch(setMovies(data.Search)))
         
-    }, [])
+    }, [dispatch])
     return (
         <div className="container">
             <div className="row mt-3 gx-2">
